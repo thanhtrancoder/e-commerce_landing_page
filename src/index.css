@@ -2,6 +2,8 @@
 @theme {
   --color-buy-green: #039869;
   --color-black-bf: #000000bf;
+  --color-seashell: #f3eee0;
+  --color-gainsboro: #d2d2d2;
 }
 
 .iframe.frontrow {

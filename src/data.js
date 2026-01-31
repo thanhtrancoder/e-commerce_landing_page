@@ -21,6 +21,8 @@ import crowecologyIcon from "./assets/icons/ecology_icon.webp";
 import deliveryTruckIcon from "./assets/icons/delivery-truck_icon.webp";
 import downloadIcon from "./assets/icons/download_icon.png";
 import kachingBundlesGiftCardIcon from "./assets/icons/kaching-Bundles-gift-card_icon.avif";
+import refundIcon from "./assets/icons/60-days_icon.png";
+import americaFlagIcon from "./assets/icons/america_flag_icon.webp";
 
 const products = [
   {
@@ -119,9 +121,12 @@ const formulas = [
 
 const buys = [
   {
+    id: 0,
     text: "1 Bottle",
     saveText: "1 bottle total | Save $27.99",
-    price: "$59.95",
+    price: "$31.96",
+    basePrice: "$59.95",
+    isSale: false,
     details: [
       {
         icon: deliveryTruckIcon,
@@ -130,9 +135,12 @@ const buys = [
     ],
   },
   {
+    id: 1,
     text: "Buy 2 Get 1 Free",
     saveText: "3 bottles total | Save $115.93",
-    price: "$179.85",
+    price: "$63.92",
+    basePrice: "$179.85",
+    isSale: true,
     details: [
       {
         icon: deliveryTruckIcon,
@@ -145,9 +153,12 @@ const buys = [
     ],
   },
   {
+    id: 2,
     text: "Buy 3 Get 2 Free",
     saveText: "5 bottles total | Save $210.95",
-    price: "$299.75",
+    price: "$95.88",
+    basePrice: "$299.75",
+    isSale: false,
     details: [
       {
         icon: deliveryTruckIcon,
@@ -165,4 +176,15 @@ const buys = [
   },
 ];
 
-export { products, formulas, buys };
+const buyServices = [
+  {
+    icon: refundIcon,
+    text: "60-Day Money-Back Guarantee",
+  },
+  {
+    icon: americaFlagIcon,
+    text: "Free Shipping From USA Included",
+  },
+];
+
+export { products, formulas, buys, buyServices };

@@ -27,7 +27,7 @@ export function Product({ product, handleNutritionalInfoClick, className }) {
           onClick={handleNutritionalInfoClick}
         >
           <img src={leafIcon} alt="" className="h-6 w-6" />
-          <span className="font-montserrat text-sm whitespace-nowrap">
+          <span className="font-montserrat text-black-bf text-sm whitespace-nowrap">
             Nutritional Information
           </span>
         </button>
