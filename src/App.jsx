@@ -9,7 +9,13 @@ import { Buy } from "./components/Buy.jsx";
 import { BuyService } from "./components/BuyService.jsx";
 import { Question } from "./components/Question.jsx";
 
-import { products, formulas, buys, buyServices } from "./data.js";
+import {
+  products,
+  formulas,
+  buys,
+  buyServices,
+  sculptiqueIngredients,
+} from "./data.js";
 
 import logoImg from "./assets/images/logo.avif";
 import customerAvatarImg from "./assets/images/AI_Nurse_Holding_TORC_2.webp";
@@ -505,20 +511,55 @@ function App() {
           </p>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 space-y-4">
           <Question question="Ingredients proven by science">
-            <p>Sculptique Ingredients:</p>
-            <ul className="list-inside list-disc">
-              <li>
-                <span>Echinacea purpurea Extract</span> – Known for its
-                anti-inflammatory properties, it may support skin health.
-              </li>
+            <p className="font-bold">Sculptique Ingredients:</p>
+            <ul className="mt-4.5 list-disc pl-10">
+              {sculptiqueIngredients.map((item) => (
+                <li
+                  key={item.id}
+                  className="font-montserrat text-black-bf text-[0.9375rem] leading-6.5 tracking-wider"
+                >
+                  <span className="font-bold">{item.title}</span> {item.text}
+                </li>
+              ))}
             </ul>
+            <p className="mt-4">
+              These natural ingredients work together to reduce puffiness,
+              bloating, fluid retention.
+            </p>
+          </Question>
+          <Question question="How does it actually work?">
+            <p className="">
+              Sculptique works by improving blood flow and supporting lymphatic
+              drainage to reduce fluid buildup that causes puffiness,
+              inflammation, and water retention. It also reduces inflammation
+              and boosts collagen production to help skin become firmer and
+              smoother.
+            </p>
+          </Question>
+          <Question question="Shipping and returns">
+            <p className="">
+              All of Sculptique orders get FREE shipping straight from our USA
+              warehouse. Orders are usually shipped out within 1-2 working days,
+              and you should receive the order within 3-7 working days for
+              domestic USA orders, and within 10 working days for International
+              orders.
+            </p>
+            <p className="mt-3">
+              We also offer a 60-day money back guarantee - if you are
+              unsatisfied with our product, you can take advantage of our
+              guarantee and ship back the product to us to get your return
+              within 60 days of receiving your order.
+            </p>
           </Question>
         </div>
-
-        <div>END</div>
       </div>
+
+      <div className="bg-seashell">
+        <h3 className="text-center">As Seen In</h3>
+      </div>
+      <div>END</div>
       {/* end main */}
     </div>
   );

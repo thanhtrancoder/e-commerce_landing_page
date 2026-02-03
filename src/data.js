@@ -187,4 +187,47 @@ const buyServices = [
   },
 ];
 
-export { products, formulas, buys, buyServices };
+const sculptiqueIngredients = [
+  {
+    id: 1,
+    title: "Echinacea purpurea Extract",
+    text: " – Known for its anti-inflammatory properties, it may support skin health.",
+  },
+  {
+    id: 2,
+    title: "Dandelion Extract",
+    text: " – Traditionally used as a diuretic, it may help reduce water retention.",
+  },
+  {
+    id: 3,
+    title: "Burdock Powder",
+    text: " – Contains antioxidants that may promote skin clarity.",
+  },
+  {
+    id: 4,
+    title: "Cleavers Extract",
+    text: " – Believed to support lymphatic drainage and detoxification.",
+  },
+  {
+    id: 5,
+    title: "Rutin",
+    text: " – A flavonoid that may strengthen blood vessels and improve circulation.",
+  },
+  {
+    id: 6,
+    title: "Bromelain Powder",
+    text: " – An enzyme from pineapple that may reduce inflammation and support tissue repair.",
+  },
+  {
+    id: 7,
+    title: "Lemon Powder",
+    text: " – Rich in vitamin C, it may aid in collagen production and skin rejuvenation.",
+  },
+  {
+    id: 8,
+    title: "Kelp Extract",
+    text: " – A source of iodine and minerals that may support skin metabolism.",
+  },
+];
+
+export { products, formulas, buys, buyServices, sculptiqueIngredients };
